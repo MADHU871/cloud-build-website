@@ -3,118 +3,106 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    <title>Cloud Build DevOps Platform</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Cloud Build Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
 <body>
 
-    <nav>
+<nav>
 
-        <div class="logo">
-            CloudBuild DevOps
-        </div>
+<h1>Cloud Build DevOps Dashboard</h1>
 
-        <ul>
+</nav>
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Docker</a></li>
-            <li><a href="#">Jenkins</a></li>
-            <li><a href="#">CI/CD</a></li>
+<section class="hero">
 
-        </ul>
+<h2>Real-Time Monitoring Dashboard</h2>
 
-    </nav>
+<p>
+Docker • Jenkins • GitHub • Kubernetes
+</p>
 
-    <section class="hero">
+</section>
 
-        <h1>Modern DevOps Cloud Platform</h1>
+<section class="dashboard">
 
-        <p>
-            Build • Automate • Deploy • Scale
-        </p>
+<div class="card">
 
-        <button onclick="showMessage()">
-            Start Deployment
-        </button>
+<h2>Docker</h2>
 
-    </section>
+<p>Containers Running Successfully</p>
 
-    <section class="cards">
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h2>GitHub</h2>
+<h2>Jenkins</h2>
 
-            <p>
-                Source Code Management with GitHub
-            </p>
+<p>CI/CD Active</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h2>Docker</h2>
+<h2>GitHub Actions</h2>
 
-            <p>
-                Containerization with Docker
-            </p>
+<p>Automation Running</p>
 
-        </div>
+</div>
 
-        <div class="card">
+<div class="card">
 
-            <h2>Jenkins</h2>
+<h2>Kubernetes</h2>
 
-            <p>
-                Complete CI/CD Automation
-            </p>
+<p>Cluster Healthy</p>
 
-        </div>
+</div>
 
-        <div class="card">
+</section>
 
-            <h2>GitHub Actions</h2>
+<section class="charts-section">
 
-            <p>
-                Automated Deployment Pipelines
-            </p>
+<h1>Monitoring Analytics</h1>
 
-        </div>
+<div class="chart-container">
 
-    </section>
+<canvas id="devopsChart"></canvas>
 
-    <section class="devops">
+</div>
 
-        <h1>DevOps Workflow</h1>
+</section>
 
-        <div class="workflow">
+<section class="jenkins-status">
 
-            <div>Code</div>
-            <div>GitHub</div>
-            <div>CI/CD</div>
-            <div>Docker</div>
-            <div>Jenkins</div>
-            <div>Deploy</div>
+<h1>Live Jenkins Status</h1>
 
-        </div>
+<div class="status success">
 
-    </section>
+Build Success 🚀
 
-    <footer>
+</div>
 
-        <h3>
-            Cloud Build Website © 2026
-        </h3>
+</section>
 
-    </footer>
+<footer>
 
-    <script src="app.js"></script>
+<h3>
+Cloud Build Dashboard © 2026
+</h3>
+
+</footer>
+
+<script src="app.js"></script>
 
 </body>
 

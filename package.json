@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "description": "Cloud Build Website DevOps Project",
   "main": "server.js",
-
   "scripts": {
     "start": "node server.js"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "dependencies": {
-    "express": "^5.1.0"
-  }
+    "express": "^5.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MADHU871/cloud-build-website.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MADHU871/cloud-build-website/issues"
+  },
+  "homepage": "https://github.com/MADHU871/cloud-build-website#readme"
 }

@@ -1,130 +1,100 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Arial;
-    background:#0f172a;
-    color:white;
+font-family:Arial;
+background:#0f172a;
+color:white;
 }
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
-    background:#111827;
+background:#111827;
+padding:20px;
+text-align:center;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:cyan;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-}
-
-nav ul li{
-    margin-left:20px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-nav ul li a:hover{
-    color:cyan;
+nav h1{
+color:cyan;
+font-size:32px;
 }
 
 .hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+padding:60px;
+text-align:center;
 }
 
-.hero h1{
-    font-size:60px;
-    margin-bottom:20px;
+.hero h2{
+font-size:45px;
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:24px;
-    margin-bottom:30px;
+font-size:22px;
+color:#cbd5e1;
 }
 
-.hero button{
-    padding:15px 40px;
-    border:none;
-    background:cyan;
-    color:black;
-    font-size:18px;
-    cursor:pointer;
-    border-radius:10px;
-    transition:0.3s;
-}
-
-.hero button:hover{
-    transform:scale(1.1);
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:50px;
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:50px;
 }
 
 .card{
-    background:#1e293b;
-    padding:40px;
-    border-radius:15px;
-    text-align:center;
-    transition:0.3s;
+background:#1e293b;
+padding:40px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    background:#334155;
+transform:translateY(-10px);
+background:#334155;
 }
 
 .card h2{
-    margin-bottom:15px;
-    color:cyan;
+color:cyan;
+margin-bottom:15px;
 }
 
-.devops{
-    padding:80px 50px;
-    text-align:center;
+.charts-section{
+padding:50px;
+text-align:center;
 }
 
-.workflow{
-    margin-top:40px;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
+.chart-container{
+width:90%;
+max-width:900px;
+margin:auto;
+background:#1e293b;
+padding:30px;
+border-radius:20px;
 }
 
-.workflow div{
-    background:cyan;
-    color:black;
-    padding:20px 30px;
-    border-radius:10px;
-    font-weight:bold;
+.jenkins-status{
+padding:50px;
+text-align:center;
+}
+
+.status{
+padding:20px;
+border-radius:10px;
+margin:20px auto;
+width:300px;
+font-size:22px;
+}
+
+.success{
+background:green;
 }
 
 footer{
-    padding:30px;
-    text-align:center;
-    background:#111827;
+background:#111827;
+padding:30px;
+text-align:center;
+margin-top:50px;
 }
