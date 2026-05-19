@@ -6,7 +6,9 @@ on:
       - main
 
 jobs:
+
   build:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -14,16 +16,13 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    - name: Setup Node
+    - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 20
 
     - name: Install Dependencies
       run: npm install
-
-    - name: Run App Test
-      run: echo "Testing Successful"
 
     - name: Docker Login
       uses: docker/login-action@v3
@@ -32,7 +31,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker Image
-      run: docker build -t YOUR_DOCKERHUB_USERNAME/cloud-build-website .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/cloud-build-website .
 
     - name: Push Docker Image
-      run: docker push YOUR_DOCKERHUB_USERNAME/cloud-build-website
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/cloud-build-website
